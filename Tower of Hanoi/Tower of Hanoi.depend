@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1588666750 source:d:\c++\tower of hanoi\src\commonfunction.cpp
+	"CommonFunction.h"
+
+1588666697 d:\c++\tower of hanoi\include\commonfunction.h
+	<windows.h>
+	<string>
+	<SDL.h>
+	<SDL_image.h>
+
+1589444455 source:d:\c++\tower of hanoi\src\print.cpp
+	"Print.h"
+
+1589793744 d:\c++\tower of hanoi\include\print.h
+	<iostream>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+
+1590036447 source:d:\c++\tower of hanoi\towerofhanoi.cpp
+	<windows.h>
+	<string>
+	"Print.h"
+

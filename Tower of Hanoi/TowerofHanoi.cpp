@@ -1,5 +1,4 @@
 #include <windows.h>
-#include <string>
 
 #include "Print.h"
 
@@ -34,7 +33,7 @@ Print g_background;
 Print disk[7];
 Print g_start;
 Print g_win;
-
+Print g_select;
 //Nguyên mẫu hàm
 int level(SDL_Event event); // Mức độ trò chơi
 
@@ -113,6 +112,7 @@ int main(int argc, char* argv[])
         for(int i=0; i<n_disk; i++) {
                     disk[i].Render(g_screen,NULL);
                 }
+        g_select.Render(g_screen, NULL);
         SDL_RenderPresent(g_screen);
         if(win()) {
                 Mix_PlayChannel(-1, g_sound_win, 0);
@@ -261,10 +261,17 @@ void clickmouse(const SDL_Event event)
     if(click == 2) {
         click=0;
         move_disk();
+        g_select.Free();
     }
     else {
-        p_pillar = pillar;
-        Mix_PlayChannel(-1, g_sound_grab, 0);
+        if(n_pillar.at(pillar).size() != 0) {
+            p_pillar = pillar;
+            Mix_PlayChannel(-1, g_sound_grab, 0);
+            g_select.a = pillar * disk_width;
+            g_select.b = 0;
+            g_select.LoadImg("img//select.png", g_screen);
+        }
+        else {click = 0;}
     }
 }
 

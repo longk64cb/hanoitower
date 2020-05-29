@@ -1,11 +1,11 @@
 #ifndef PRINT_H
 #define PRINT_H
 
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 #include <SDL.h>
 #include <SDL_image.h>
 #include <SDL_mixer.h>
+#include <SDL_ttf.h>
 
 using namespace std;
 

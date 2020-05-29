@@ -11,14 +11,21 @@
 1589444455 source:d:\c++\tower of hanoi\src\print.cpp
 	"Print.h"
 
-1590231041 d:\c++\tower of hanoi\include\print.h
-	<iostream>
-	<vector>
+1590602659 d:\c++\tower of hanoi\include\print.h
+	<bits/stdc++.h>
 	<SDL.h>
 	<SDL_image.h>
 	<SDL_mixer.h>
+	<SDL_ttf.h>
 
-1590503329 source:d:\c++\tower of hanoi\towerofhanoi.cpp
+1590776998 source:d:\c++\tower of hanoi\towerofhanoi.cpp
 	<windows.h>
 	"Print.h"
+	"text.h"
+
+1590594860 source:d:\c++\tower of hanoi\src\text.cpp
+	"text.h"
+
+1590594860 d:\c++\tower of hanoi\include\text.h
+	"print.h"
 

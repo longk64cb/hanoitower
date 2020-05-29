@@ -35,7 +35,9 @@
 		</Compiler>
 		<Unit filename="TowerofHanoi.cpp" />
 		<Unit filename="include/Print.h" />
+		<Unit filename="include/text.h" />
 		<Unit filename="src/Print.cpp" />
+		<Unit filename="src/text.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
